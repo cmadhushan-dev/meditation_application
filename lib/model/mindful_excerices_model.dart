@@ -1,31 +1,31 @@
 class MindfulnessExcericesModel {
-  final String categroy;
+  final String category;
   final String name;
   final String description;
-  final List<String> instruction;
+  final List<String> instructions;
   final int duration;
-  final String instructionUrl;
+  final String instructionsUrl;
   final String imagePath;
 
   MindfulnessExcericesModel({
-    required this.categroy,
+    required this.category,
     required this.name,
     required this.description,
-    required this.instruction,
+    required this.instructions,
     required this.duration,
-    required this.instructionUrl,
+    required this.instructionsUrl,
     required this.imagePath,
   });
 
   //method to convert json data in to the dart object
   factory MindfulnessExcericesModel.fromJson(Map<String, dynamic> json) {
     return MindfulnessExcericesModel(
-      categroy: json['categroy'],
+      category: json['categroy'],
       name: json['name'],
       description: json['description'],
-      instruction: List<String>.from(json['instruction']),
+      instructions: List<String>.from(json['instruction']),
       duration: json['duration'],
-      instructionUrl: json['instruction_url'],
+      instructionsUrl: json['instruction_url'],
       imagePath: json['image_path'],
     );
   }
@@ -33,12 +33,12 @@ class MindfulnessExcericesModel {
   //convert the dart object to the json data
   Map<String, dynamic> toJson() {
     return {
-      'categroy':categroy,
+      'categroy':category,
       'name':name,
       'description':description,
-      'instruction':instruction,
+      'instruction':instructions,
       'duration':duration,
-      'instruction_url':instructionUrl,
+      'instruction_url':instructionsUrl,
       'image_path':imagePath
     };
   }

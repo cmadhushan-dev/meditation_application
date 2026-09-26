@@ -1,7 +1,7 @@
 class MeditationExcericeModel {
   final String category;
   final String name;
-  final String descrption;
+  final String description;
   final int duration;
   final String audioUrl;
   final String videoUrl;
@@ -9,7 +9,7 @@ class MeditationExcericeModel {
   MeditationExcericeModel({
     required this.category,
     required this.name,
-    required this.descrption,
+    required this.description,
     required this.duration,
     required this.audioUrl,
     required this.videoUrl,
@@ -20,7 +20,7 @@ class MeditationExcericeModel {
     return MeditationExcericeModel(
       category: json['category'],
       name: json['name'],
-      descrption: json['description'],
+      description: json['description'],
       duration: json['duration'],
       audioUrl: json['audio_url'],
       videoUrl: json['video_url'],
@@ -32,7 +32,7 @@ class MeditationExcericeModel {
     return {
       'category':category,
       'name':name,
-      'description':descrption,
+      'description':description,
       'duration':duration,
       'audio_url':audioUrl,
       'video_url':videoUrl,

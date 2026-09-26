@@ -1,12 +1,12 @@
 class SleepExcericesModel {
-  final String categroy;
+  final String category;
   final String name;
   final String description;
   final int duration;
   final String audioUrl;
 
   SleepExcericesModel({
-    required this.categroy,
+    required this.category,
     required this.name,
     required this.description,
     required this.duration,
@@ -16,7 +16,7 @@ class SleepExcericesModel {
   //dart object to json format
   factory SleepExcericesModel.fromJson(Map<String, dynamic> json) {
     return SleepExcericesModel(
-      categroy: json['category'],
+      category: json['category'],
       name: json['name'],
       description: json['description'],
       duration: json['duration'],
@@ -28,7 +28,7 @@ class SleepExcericesModel {
   Map<String, dynamic> toJson() {
     return 
     {
-      'category':categroy,
+      'category':category,
       'name':name,
       'description':description,
       'duration':duration,
